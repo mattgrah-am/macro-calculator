@@ -9,4 +9,20 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Macro Calculator",
+});
+
+useServerSeoMeta({
+  title: "Get your Macros with this simple calculator.",
+  ogTitle: "Get your Macros with this simple calculator.",
+  twitterTitle: "Get your Macros with this simple calculator.",
+  description:
+    "Calculate Your Macros: Our user-friendly macro calculator can help you customize your diet, make the most of your macros, and easily reach your fitness and health objectives.",
+  ogDescription:
+    "Calculate Your Macros: Our user-friendly macro calculator can help you customize your diet, make the most of your macros, and easily reach your fitness and health objectives.",
+  twitterDescription:
+    "Calculate Your Macros: Our user-friendly macro calculator can help you customize your diet, make the most of your macros, and easily reach your fitness and health objectives.",
+});
+</script>
