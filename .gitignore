@@ -22,3 +22,6 @@ logs
 .env
 .env.*
 !.env.example
+
+# Bun config
+bun.lockb
