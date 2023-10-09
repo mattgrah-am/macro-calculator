@@ -106,7 +106,7 @@ import { LearnModal } from '#build/components';
       </button>
     </div>
   </form>
-  <div v-if="macrosCalculated" class="">
+  <div v-if="macrosCalculated">
     <h3 class="uppercase text-xl font-black mb-4">Your Macros</h3>
     <div class="flex justify-between mb-4 pb-1 border-b border-neutral-300">
       <div class="font-medium">TDEE</div>
@@ -183,7 +183,7 @@ const showModal = ref(false);
 
 const activityLevelValues = [
   { option: "Low", value: 1.4 },
-  { option: "bold", value: 1.55 },
+  { option: "Medium", value: 1.55 },
   { option: "High", value: 1.8 },
 ];
 const goalValue = [

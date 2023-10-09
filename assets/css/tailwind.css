@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-50;
+}
+
 .modal-mask {
   position: fixed;
   z-index: 9998;
@@ -21,6 +25,8 @@
 }
 
 .modal-container {
+  max-height: 80vh;
+  overflow-y: auto;
   transition: opacity 0.3s ease;
 }
 
