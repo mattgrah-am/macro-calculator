@@ -10,20 +10,22 @@
 </template>
 
 <script setup lang="ts">
+const pageTitle = "Macro Calculator";
+const seoTitle = "Get your Macros with this simple calculator.";
+const seoDesc =
+  "Calculate Your Macros: Our user-friendly macro calculator can help you customize your diet, make the most of your macros, and easily reach your fitness and health objectives.";
+
 useHead({
-  title: "Macro Calculator",
+  title: pageTitle,
   link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
 });
 
 useServerSeoMeta({
-  title: "Get your Macros with this simple calculator.",
-  ogTitle: "Get your Macros with this simple calculator.",
-  twitterTitle: "Get your Macros with this simple calculator.",
-  description:
-    "Calculate Your Macros: Our user-friendly macro calculator can help you customize your diet, make the most of your macros, and easily reach your fitness and health objectives.",
-  ogDescription:
-    "Calculate Your Macros: Our user-friendly macro calculator can help you customize your diet, make the most of your macros, and easily reach your fitness and health objectives.",
-  twitterDescription:
-    "Calculate Your Macros: Our user-friendly macro calculator can help you customize your diet, make the most of your macros, and easily reach your fitness and health objectives.",
+  title: seoTitle,
+  ogTitle: seoTitle,
+  twitterTitle: seoTitle,
+  description: seoDesc,
+  ogDescription: seoDesc,
+  twitterDescription: seoDesc,
 });
 </script>
