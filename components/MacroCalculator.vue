@@ -12,8 +12,7 @@ import { LearnModal } from '#build/components';
           type="number"
           v-model="height"
           :required="true"
-          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600"
-        />
+          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600" />
       </div>
       <div>
         <label for="weight" class="block text-sm font-medium leading-6"
@@ -25,8 +24,7 @@ import { LearnModal } from '#build/components';
           type="number"
           v-model="weight"
           :required="true"
-          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600"
-        />
+          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600" />
       </div>
       <div>
         <label for="age" class="block text-sm font-medium leading-6">Age</label>
@@ -36,8 +34,7 @@ import { LearnModal } from '#build/components';
           type="number"
           v-model="age"
           :required="true"
-          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600"
-        />
+          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600" />
       </div>
       <div>
         <label for="gender" class="block text-sm font-medium leading-6"
@@ -47,13 +44,11 @@ import { LearnModal } from '#build/components';
           id="gender"
           name="gender"
           v-model="gender"
-          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600"
-        >
+          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600">
           <option
             v-for="(item, idx) in genderValues"
             :value="item.value"
-            :key="idx"
-          >
+            :key="idx">
             {{ item.option }}
           </option>
         </select>
@@ -66,13 +61,11 @@ import { LearnModal } from '#build/components';
           id="activity-level"
           name="activity-level"
           v-model="activityLevel"
-          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600"
-        >
+          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600">
           <option
             v-for="(item, idx) in activityLevelValues"
             :value="item.value"
-            :key="idx"
-          >
+            :key="idx">
             {{ item.option }}
           </option>
         </select>
@@ -85,13 +78,11 @@ import { LearnModal } from '#build/components';
           id="goal"
           name="goal"
           v-model="goal"
-          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600"
-        >
+          class="w-full rounded-md border-r-4 border-transparent pl-2 py-2 ring-1 ring-neutral-300 shadow-sm text-sm text-neutral-800 focus:outline-none focus:ring focus:ring-rose-600">
           <option
             v-for="(item, idx) in goalValue"
             :value="item.value"
-            :key="idx"
-          >
+            :key="idx">
             {{ item.option }}
           </option>
         </select>
@@ -100,8 +91,7 @@ import { LearnModal } from '#build/components';
     <div>
       <button
         type="submit"
-        class="uppercase mb-2 flex w-full justify-center rounded-md bg-rose-600 py-2 px-2 font-bold text-white shadow-sm hover:bg-rose-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600"
-      >
+        class="uppercase mb-2 flex w-full justify-center rounded-md bg-rose-600 py-2 px-2 font-bold text-white shadow-sm hover:bg-rose-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600">
         Calculate
       </button>
     </div>
@@ -135,8 +125,7 @@ import { LearnModal } from '#build/components';
     <button
       type="button"
       @click="macrosCalculated = false"
-      class="uppercase mb-2 flex w-full justify-center rounded-md bg-rose-600 py-2 px-2 font-bold text-white shadow-sm hover:bg-rose-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600"
-    >
+      class="uppercase mb-2 flex w-full justify-center rounded-md bg-rose-600 py-2 px-2 font-bold text-white shadow-sm hover:bg-rose-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600">
       Back
     </button>
   </div>
@@ -144,18 +133,13 @@ import { LearnModal } from '#build/components';
     <button
       type="button"
       @click="showModal = !showModal"
-      class="hover:underline uppercase font-semibold hover:text-rose-500 hover:underline-offset-2"
-    >
+      class="hover:underline uppercase font-semibold hover:text-rose-500 hover:underline-offset-2">
       Learn More
     </button>
     <div>
       Created with ❤️ by
-      <NuxtLink
-        class=""
-        to="https://mattgrah.am/"
-        target="_blank"
-        :external="true"
-        >mattgrah.am
+      <NuxtLink class="" to="https://matg.dev/" target="_blank" :external="true"
+        >Matt
       </NuxtLink>
     </div>
   </div>
