@@ -139,7 +139,7 @@ import { LearnModal } from '#build/components';
     <div>
       Created with ❤️ by
       <NuxtLink class="" to="https://matg.dev/" target="_blank" :external="true"
-        >Matt
+        >matg.dev
       </NuxtLink>
     </div>
   </div>
